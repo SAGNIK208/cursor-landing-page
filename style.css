@@ -1,0 +1,384 @@
+:root {
+    --primary-color : #14120B;
+    --secondary-color : #EAE9E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Geist Sans', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+nav img{
+    height: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+ul li{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.btn-secondary {
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid #32312C;
+    font-weight: 100;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: #32312C;
+    font-weight: 100;
+}
+
+.hero{
+    padding: 105px 18.75px 63px 18.75px;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 21px;
+}
+
+.hero h1{
+    width: 40%;
+}
+
+.hero button{
+    width: 20%;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 20px;
+}
+
+.hero img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.brands{
+    padding: 105px 18.75px 63px 18.75px;
+}
+
+.brands h2{
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brands-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.brand {
+    height: 100px;
+    width: 130px;
+    background-color: #1B1913;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand i{
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+
+.highlights {
+    padding: 105px 18.75px 63px 18.75px;
+}
+
+.highlight {
+    background-color: #1B1913;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 30px;
+}
+
+.highlight>div{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.highlight img{
+    width: 780px;
+}
+
+.highlight h2{
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+    font-weight: 200;
+}
+
+.highlight p{
+    color: #A1A09E;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonials{
+    padding: 63px 18.750px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 8px;
+}
+
+.testimonial-header{
+    text-align: center;
+    font-size: 36px;
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: #1B1913;
+    margin-top: 15px;
+    color: #e6e2e2;
+}
+
+.testimonial-author{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.testimonial-author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.testimonial-author h2{
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.testimonial-author p{
+    color: #A1A09E;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.feature{
+    padding: 63px 18.750px;
+}
+.feature h1{
+    font-weight: 300;
+}
+.feature-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    
+}
+
+.feature-container h2{
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.feature-container p{
+    margin-bottom: 15px;
+     color: #A1A09E;
+    font-size: 18px;
+}
+
+.feature-container a{
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-container img{
+    height: 340px;
+    width: 340px;
+    display: block;
+}
+
+.feature-container>div{
+    background-color: #1B1913;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.changelog{
+    padding: 63px 18.750px;
+}
+
+.changelog h1{
+    font-weight: 300;
+}
+
+.changelog-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.changelog-container div{
+    background-color: #1B1913;
+    padding: 30px;
+    width: 280px;
+}
+
+.changelog h2{
+     color: #A1A09E;
+    font-size: 18px;
+}
+
+.changelog span{
+    border-radius: 20px;
+    border: 1px solid #A1A09E;
+    padding: 5px 10px;
+}
+
+.changelog p{
+    margin-top: 15px;
+}
+.changelog a{
+    display: block;
+    margin-top: 15px;
+}
+
+.hero2 button{
+    width: inherit;
+}
+
+.posts{
+    padding: 63px 18.750px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+     background-color: #1B1913;
+}
+
+.posts a{
+    display: block;
+    margin-top: 15px;
+}
+
+.posts h1,h2{
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.posts p{
+    margin-bottom: 15px;
+     color: #A1A09E;
+}
+
+.posts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.posts-container div{
+    background-color: #26251E;
+    padding: 15px;
+}
+
+.hero3{
+    padding: 105px 18.75px 63px 18.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero3 h1{
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.hero3 button{
+     font-size: 18px;
+    font-weight: 100;
+    padding: 10px 20px;
+}
+
+footer{
+    padding: 63px 18.75px 20px 18.75px;
+    background-color: #1B1913;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+}
+
+.footer-container h3{
+     color: #A1A09E;
+     font-size: 15px;
+     margin: 10px;
+     font-weight: 100;
+}
+
+.footer-container p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+footer>p{
+    margin-top: 50px;
+}
